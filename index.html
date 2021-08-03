@@ -11,17 +11,7 @@
 
 </head>
 <body>
-<script>
-    $(function () {
-        $('#pagepiling').pagepiling({
-            menu: '#nav',
-            sectionSelector: '.section',
-            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-            scrollingSpeed: 1200,
-        });
-    });
-</script>
+
 <div id="pagepiling">
     <a class="totop" style="z-index: 100;" href="#page1"><span>topに戻る</span></a>
     <section class="section pp-scrollable" style="z-index: 10;" id="#page1">
@@ -145,10 +135,21 @@
         </div>
     </section>
 </div>
+
+<!-- <script type="text/javascript" src="./js/index.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
-
+<script>
+    $(function () {
+        $('#pagepiling').pagepiling({
+            menu: '#nav',
+            sectionSelector: '.section',
+            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            scrollingSpeed: 1800,
+        });
+    });
+</script>
 </body>
 
 </html>

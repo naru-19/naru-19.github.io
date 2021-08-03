@@ -20,7 +20,25 @@
             }
         }
     }
-
+    // .sp{
+    //     display: none;
+    // }
+    .sp{
+        // text-align: center;
+        a{
+            color: $col-sub2-clear;
+        }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        font-size: 40px;
+        bottom:120px;
+    }
+    .up{
+        top: 20px;
+    }
     .section{
         &__title{
             margin: 0 0 0 100px;
@@ -100,6 +118,26 @@
                 animation: fadeIn 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
             }
         }
+    }
+    .sp{
+        // text-align: center;
+        a{
+            color: $col-sub2-clear;
+        }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        font-size: 40px;
+        bottom:50px;
+    }
+    .up{
+        bottom: 130px;
+    }
+
+    section{
+        padding: 20px 0 0 0;
     }
     .pc{
         display: none;

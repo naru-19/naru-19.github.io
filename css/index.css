@@ -13,6 +13,21 @@
     margin: 30px 0 30px 0;
     font-size: 25px;
   }
+  .sp {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 40px;
+    bottom: 120px;
+  }
+  .sp a {
+    color: rgba(238, 238, 238, 0.4);
+  }
+  .up {
+    top: 20px;
+  }
   .section__title {
     margin: 0 0 0 100px;
     width: 250px;
@@ -86,6 +101,24 @@
   .section .section-table__chap a:hover {
     transform: scale(1.5);
     cursor: pointer;
+  }
+  .sp {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 40px;
+    bottom: 50px;
+  }
+  .sp a {
+    color: rgba(238, 238, 238, 0.4);
+  }
+  .up {
+    bottom: 130px;
+  }
+  section {
+    padding: 20px 0 0 0;
   }
   .pc {
     display: none;

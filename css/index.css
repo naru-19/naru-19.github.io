@@ -1,16 +1,12 @@
 @charset "UTF-8";
-.top {
-  height: 100vh;
-}
-
-.top__title {
+.section__title_top {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.top__title .text {
+.section__title_top .text {
   color: #dddddd;
   width: 14ch;
   font: thin 200% 　Consolas, Monaco, monospace;
@@ -22,37 +18,37 @@
   animation: typing 2s steps(14), caret 0.3s steps(1) infinite;
 }
 
-.top .contents-table {
+.section .section-table {
   margin: 160px 0 0 0;
 }
 
-.top .contents-table__title {
-  font-size: 30px;
+.section .section-table__title {
+  font-size: 27px;
   text-align: center;
   animation: fadeIn 6s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
   margin: 0 0 50px 0;
 }
 
-.top .contents-table__chap {
+.section .section-table__chap {
   margin: 30px 0 30px 0;
   text-align: center;
   font-size: 25px;
   animation: fadeIn 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 }
 
-.top .contents-table__chap a {
+.section .section-table__chap a {
   display: inline-block;
   transition: all .3s ease 0s;
   color: #dddddd;
   text-decoration: none;
 }
 
-.top .contents-table__chap a:hover {
+.section .section-table__chap a:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
 
-.contents__title {
+.section__title {
   margin: 0 0 0 100px;
   width: 250px;
   text-align: center;
@@ -63,28 +59,64 @@
   color: #00ACC1;
 }
 
-.contents__text {
-  font-size: 30px;
-  margin: 20px 0 70px 55%;
+.section__text {
+  font-size: 27px;
+  margin: 20px 0 70px 52%;
 }
 
-.contents__bul {
+.section__bul {
   margin: 30px 0 30px 0;
 }
 
-.contents__bul a {
+.section__bul a {
   color: #dddddd;
   border-bottom: 2px solid #dddddd;
 }
 
-.contents__bulsub {
+.section__bulsub {
   font-size: 20px;
   margin: 0 0 20px 0;
 }
 
-.contents__bulsub a {
+.section__bulsub a {
   color: #dddddd;
   border-bottom: 1px solid #dddddd;
+}
+
+.section__omake {
+  margin: 0 0 0 20%;
+  padding: 0 0 0 90px;
+}
+
+.section__omake .title {
+  text-align: center;
+  font-size: 27px;
+}
+
+.section__omake img {
+  height: 200px;
+}
+
+.section__omake .input {
+  display: inline-block;
+}
+
+.section__omake .arrow {
+  display: inline-block;
+}
+
+.section__omake .arrow .arrow-right {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 30px 30px 70px 30px;
+  border-top: 4px solid #dddddd;
+  border-right: 4px solid #dddddd;
+  transform: rotate(45deg);
+}
+
+.section__omake .output {
+  display: inline-block;
 }
 
 section {

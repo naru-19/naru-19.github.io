@@ -1,10 +1,10 @@
 @import "valiables";
 
 
-.top{
+.section{
     // margin-top: 160px;
-    height: 100vh;
-    &__title{
+    // height: 100vh;
+    &__title_top{
         display: flex;
         width: 100%;
         justify-content: center;
@@ -21,7 +21,7 @@
             animation: typing 2s steps(14), caret 0.3s steps(1) infinite ;
         }
     }
-    .contents-table{
+    .section-table{
         margin: 160px 0 0 0 ;
         &__title{
             font-size: $fs3;
@@ -49,7 +49,7 @@
     }
 }
 
-.contents{
+.section{
     &__title{
         // display: inline-block;
         margin: 0 0 0 100px;
@@ -63,7 +63,7 @@
     }
     &__text{
         font-size: $fs3;
-        margin:20px 0 70px 55%;
+        margin:20px 0 70px 52%;
     }
     &__bul{
         margin: 30px 0 30px 0;
@@ -78,6 +78,35 @@
         a{
             color: $col-sub2;
             border-bottom: 1px solid $col-sub2;
+        }
+    }
+    &__omake{
+        margin: 0 0 0 20%;
+        .title{
+            text-align: center;
+            font-size: $fs3;
+        }
+        img{
+            height: 200px;
+        }
+        padding: 0 0 0 90px;
+        .input{
+            display: inline-block;
+        }
+        .arrow{
+            display: inline-block;
+            .arrow-right {
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                margin: 30px 30px 70px 30px;
+                border-top: 4px solid $col-sub2;
+                border-right: 4px solid $col-sub2;
+                transform: rotate(45deg);
+            }
+        }
+        .output{
+            display: inline-block;
         }
     }
 }

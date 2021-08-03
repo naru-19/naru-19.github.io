@@ -1,14 +1,18 @@
 // 主要色
 $col-main:rgba(47,50,56,0.7);
-// $col-sub1:#222222;
-$col-sub1:#3abfe0;
 $col-sub1:#00ACC1;
 $col-sub2:#dddddd;
 $col-sub2-clear:rgba(14*17,14*17,14*17,0.4);
-
-$fs1:15px;
-$fs2:40px;
-$fs3:30px;
-$fs4:25px;
-
+@media screen and (min-width:768px) {
+    $fs1:15px;
+    $fs2:40px;
+    $fs3:27px;
+    $fs4:25px;
+}
+@media screen and (max-width:767px) {
+    $fs1:1rem;
+    $fs2:40px;
+    $fs3:27px;
+    $fs4:25px;
+}
 $ff:'Noto Serif JP', serif;

@@ -1,6 +1,6 @@
 @import "valiables";
 html { scroll-behavior: smooth;}
-body{
+#pagepiling{
     background-color: $col-main;
     color:$col-sub2;
     font-family: $ff;
@@ -10,23 +10,24 @@ section{
     padding: 70px 0 0 0;
 }
 
-// body::before{
-//    content:"";
-//    display:block;
-//    width:8px;
-//    height:100%;
-//    background-color:$col-sub2-clear;
-//    position:absolute;
-//    top:0;
-//    bottom:0;
-//    left:60px;
-// }
-
-body{
-    margin: 0 0 0 60px;
-    padding: 0 60px 0 0;
-    border-left: 8px solid $col-sub2-clear;
+body::before{
+    z-index: 10000;
+   content:"";
+   display:block;
+   width:8px;
+   height:100%;
+   background-color:$col-sub2-clear;
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:60px;
 }
+
+// #pagepiling{
+//     padding: 0 0 0 60px;
+//     padding: 0 60px 0 0;
+//     border-left: 8px solid $col-sub2-clear;
+// }
 
 .arrow-top {
   display: inline-block;
@@ -37,15 +38,30 @@ body{
   border-left: 4px solid $col-sub2-clear;
   transform: rotate(45deg);
 }
+// .arrow-bottom {
+//   display: inline-block;
+//   width: 36px;
+//   height: 36px;
+//   margin:0px auto 30px 49%;
+//   border-bottom: 4px solid $col-sub2-clear;
+//   border-right: 4px solid $col-sub2-clear;
+//   transform: rotate(45deg);
+//   position: fixed;
+// }
+
 .arrow-bottom {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  margin:0px auto 30px 49%;
-  border-bottom: 4px solid $col-sub2-clear;
-  border-right: 4px solid $col-sub2-clear;
-  transform: rotate(45deg);
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    //   margin:0px auto 0px 40%;
+    
+    border-bottom: 4px solid $col-sub2-clear;
+    border-right: 4px solid $col-sub2-clear;
+    transform: rotate(45deg);
+    position: fixed;
+    bottom: 50px;
 }
+
 .totop{
     text-decoration: none;
     color: $col-sub2-clear;

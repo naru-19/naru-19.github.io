@@ -5,96 +5,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
-    <section class="top" id="#top">
-        <div class="top__title">
+<div id="pagepiling">
+    <a class="totop" style="z-index: 100;" href="#page1"><span>topに戻る</span></a>
+    <section class="section pp-scrollable" style="z-index: 10;" id="#page1">
+        <div class="section__title_top">
             <div class="text">ここはなるが作ったページです</div>
         </div>
-        <div class="contents-table">
-            <div class="contents-table__title">
+        <div class="section-table">
+            <div class="section-table__title">
                 目次
             </div>
-            <div class="contents-table__chap">
-                <a href="#chap1">自己紹介</a>
+            <div class="section-table__chap">
+                <a href="#page2">自己紹介</a>
             </div>
-            <div class="contents-table__chap">
-                <a href="#chap2">過去の製作物</a>
+            <div class="section-table__chap">
+                <a href="#page3">過去の製作物</a>
             </div>
-            <div class="contents-table__chap">
-                <a href="#chap3">この先やりたいこと</a>
+            <div class="section-table__chap">
+                <a href="#page4">この先やりたいこと</a>
+            </div>
+            <div class="section-table__chap">
+                <a href="#page5">おまけ</a>
             </div>
         </div>
     </section>
-    <a class="totop" href="#top"><span>topに戻る</span></a>
-    <section class="contents" id="chap1">
-        <a class="arrow-top" href="#top"></a>
-
-        <div class="contents__title">
+    <section class="section pp-scrollable" style="z-index: 9;" id="#page2">
+        <div class="section__title">
             自己紹介
         </div>
-        <div class="contents__text">
-            <div class="contents__bul">
+        <div class="section__text">
+            <div class="section__bul">
                 2000年広島生まれ
             </div>
-            <div class="contents__bul">
+            <div class="section__bul">
                 趣味はテニス・キーボードを弾くこと
             </div>
-            <div class="contents__bul">
+            <div class="section__bul">
                 好きなアーティストはヨルシカ
             </div>
-            <div class="contents__bul">
+            <div class="section__bul">
+                
+            </div>
+            <div class="section__bul">
                 専攻は情報システム系
             </div>
-            <div class="contents__bul">
+            <div class="section__bul">
                 <a target="_blank" href="https://github.com/naru-19">githubはここから</a>
             </div>
         </div>
-        <a class="arrow-bottom" href="#chap2"></a>
     </section>
-    <section class="contents" id="chap2">
-        <a class="arrow-top" href="#chap1"></a>
+    <section class="section pp-scrollable" style="z-index: 8;" id="#page3">
     
-        <div class="contents__title">
+        <div class="section__title">
             過去の製作物
         </div>
-        <div class="contents__text">
-            <div class="contents__bul">
+        <div class="section__text">
+            <div class="section__bul">
                 <a target="_blank" href="https://hurocha.herokuapp.com/top">Hurocha</a>
             </div>
-            <div class="contents__bulsub">
+            <div class="section__bulsub">
                 Hurochaでは直感的な操作によってフローチャートを作成できます。
                 作成したものをpdfあるいは画像としても保存できるのも特徴です。<br>
                 <a target="_blank" href="https://hurocha.herokuapp.com/top">こちら</a>からHurochaに移動できます。
             </div>
-            <div class="contents__bul">
+            <div class="section__bul">
                 <a target="_blank" href="https://github.com/naru-19/shiny">Shiny</a>
             </div>
-            <div class="contents__bulsub">
+            <div class="section__bulsub">
                 入力画像の色を自由に変換することができます。<br>
                 <a target="_blank" href="https://github.com/naru-19/shiny">こちら</a>に実行方法やコードがあります。
             </div>
         </div>
-        <a class="arrow-bottom" href="#chap3"></a>
     </section>
-    <section class="contents" id="chap3">
-        <a class="arrow-top" href="#chap2"></a>
+    <section class="section pp-scrollable" style="z-index: 7;" id="page4">
     
-        <div class="contents__title" style="text-align: left;padding: 20px;">
+        <div class="section__title" style="text-align: left;padding: 20px;">
             この先<br>やりたいこと
         </div>
-        <div class="contents__text">
-            <div class="contents__bul">
-                
+        <div class="section__text">
+            <div class="section__bul">
+                とにかくどんどん色んなものを作る
+            </div>
+            <div class="section__bul">
+                作ったものをアプリにする
+            </div>
+            <div class="section__bul">
+                signateでメダルを取る
+            </div>
+            <div class="section__bul">
+                国際会議での論文の採択を目指す
             </div>
         </div>
-        <a class="arrow-bottom" href="#chap4"></a>
     </section>
-</body>
+    <section class="section pp-scrollable" style="z-index: 6;" id="page5">
+        <div class="section__title" >
+            おまけ
+        </div>
+        <div class="section__text">
+            <div class="section__bul">
+                ここまで見てくれてありがとうございます。
+            </div>
+            <div class="section__bul">
+                作ったものを実際に使った結果載せときます。
+            </div>
+        </div>
+        <div class="section__omake">
+            <div class="input">
+                <div class="title">
+                入力画像
+                </div>
+                <img src="img/pika.jpg">
+            </div>
+            <div class="arrow">
+                <div class="arrow-right"></div>
+            </div>
+            <div class="output">
+                <div class="title">
+                    出力画像
+                </div>
+                <img src="img/pika_edit.jpg">
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
+
+</body>
 
 </html>

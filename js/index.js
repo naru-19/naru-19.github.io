@@ -1,10 +1,15 @@
-// // $(function () {
-//     $('a[href^=#]').click(function () {
-//         var speed = 400;
-//         var href = $(this).attr("href");
-//         var target = $(href == "#" || href == "" ? 'html' : href);
-//         var position = target.offset().top;
-//         $('body,html').animate({ scrollTop: position }, speed, 'swing');
-//         return false;
-//     });
-// // });
+$(function () {
+    $('#pagepiling').pagepiling({
+        menu: '#nav',
+        sectionSelector: '.section',
+        sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        // navigation: {
+        //     // 'textColor': '#000',
+        //     // 'bulletsColor': '#000',
+        //     'position': 'right',
+        //     'tooltips': ['page1', 'page2', 'page3', 'page4']
+        // },
+        scrollingSpeed: 1200,
+    });
+});

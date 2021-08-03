@@ -5,11 +5,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    
 </head>
 <body>
-    <section class="top">
+    <section class="top" id="#top">
         <div class="top__title">
             <div class="text">ここはなるが作ったページです</div>
         </div>
@@ -28,12 +30,47 @@
             </div>
         </div>
     </section>
-    <section class="main" id="chap1">
-        <div class="">
+    <a class="totop" href="#top"><span>topに戻る</span></a>
+    <section class="contents" id="chap1">
+        <a class="arrow-top" href="#top"></a>
 
+        <div class="contents__title">
+            自己紹介
         </div>
+        <div class="contents__text">
+            <div class="contents__bul">
+                2000年広島生まれ
+            </div>
+            <div class="contents__bul">
+                趣味はテニス・キーボードを弾くこと
+            </div>
+            <div class="contents__bul">
+                好きなアーティストはヨルシカ
+            </div>
+            <div class="contents__bul">
+                専攻は情報システム系
+            </div>
+        </div>
+        <a class="arrow-bottom" href="#chap2"></a>
     </section>
+    <section class="contents" id="chap2">
+        <a class="arrow-top" href="#chap1"></a>
     
+        <div class="contents__title">
+            過去の製作物
+        </div>
+        <div class="contents__text">
+            <div class="contents__bul">
+                <a href="https://hurocha.herokuapp.com/top">Hurocha</a>
+            </div>
+            <div class="contents__bulsub">
+                Hurochaでは直感的な操作によってフローチャートを作成できます。
+                作成したものをpdfあるいは画像としても保存できるのも特徴です。<br>
+                <a href="https://hurocha.herokuapp.com/top">こちら</a>からHurochaに移動できます。
+            </div>
+        </div>
+        <a class="arrow-bottom" href="#chap3"></a>
+    </section>
 
 </body>
 <script type="text/javascript" src="./js/index.js"></script>

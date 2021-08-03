@@ -7,7 +7,7 @@ body{
 }
 
 section{
-    padding: 150px 0 0 0;
+    padding: 70px 0 0 0;
 }
 
 // body::before{
@@ -26,4 +26,51 @@ body{
     margin: 0 0 0 60px;
     padding: 0 60px 0 0;
     border-left: 8px solid $col-sub2-clear;
+}
+
+.arrow-top {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin:0 auto 30px 49%;
+  border-top: 4px solid $col-sub2-clear;
+  border-left: 4px solid $col-sub2-clear;
+  transform: rotate(45deg);
+}
+.arrow-bottom {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin:30px auto 0px 49%;
+  border-bottom: 4px solid $col-sub2-clear;
+  border-right: 4px solid $col-sub2-clear;
+  transform: rotate(45deg);
+}
+.totop{
+    text-decoration: none;
+    color: $col-sub2-clear;
+    font-size: $fs4;
+    text-align: right;
+    position: fixed;
+    width: 90%;
+    bottom: 50px;
+    span{
+        border: double 8px $col-sub2-clear;
+        padding: 2px 3px 5px 3px;
+        transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+    }
+    span:hover {
+    border-color:rgba(0,0,0,0);
+    box-shadow: inset 0 0 20px 
+    rgba(255, 255, 255, 0.5), 0 0 20px 
+    rgba(255, 255, 255, 0.2);
+    outline-color: transparent;
+    outline-offset: 12px;
+    // text-shadow: 2px 2px 3px #000;
+    cursor: pointer;
+  }  
+}
+
+a{
+    text-decoration: none;
 }

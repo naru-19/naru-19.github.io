@@ -92,7 +92,7 @@
   }
   .section__title {
     width: 100%;
-    padding: 15% 0 15% 0;
+    padding: 5% 0 15% 0;
     text-align: center;
     border-bottom: 5px solid rgba(238, 238, 238, 0.4);
     font-size: 25px;
@@ -125,6 +125,20 @@
   }
   .section__omake .output {
     display: inline-block;
+  }
+  .totop {
+    text-decoration: none;
+    color: rgba(238, 238, 238, 0.4);
+    font-size: 10px;
+    text-align: right;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+  }
+  .totop span {
+    border: double 5px rgba(238, 238, 238, 0.4);
+    padding: 2px 3px 5px 3px;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
   }
 }
 

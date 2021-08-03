@@ -108,7 +108,7 @@
         &__title{
             // margin: 0 0 0 100px;
             width:100%;
-            padding: 15% 0 15% 0;
+            padding: 5% 0 15% 0;
             text-align: center;
             border-bottom:5px solid $col-sub2-clear ;
             font-size: $fs4;
@@ -142,6 +142,21 @@
             .output{
                 display: inline-block;
             }
+        }
+    }
+    .totop{
+        text-decoration: none;
+        color: $col-sub2-clear;
+        font-size: 10px;
+        text-align: right;
+        position: fixed;
+        // width: 90%;
+        right:10px;
+        bottom: 20px;
+        span{
+            border: double 5px $col-sub2-clear;
+            padding: 2px 3px 5px 3px;
+            transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
         }
     }
 }

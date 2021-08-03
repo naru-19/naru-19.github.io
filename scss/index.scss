@@ -1,121 +1,77 @@
 @import "valiables";
 
 
-
-.section{
-    &__title_top{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        .text{
-            color:$col-sub2;
-            width: 14ch;
-            font:thin 200%　Consolas, Monaco, monospace;
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 2px solid transparent;
-            font-size:$fs2;
-            animation: typing 2s steps(14), caret 0.3s steps(1) infinite ;
-        }
-    }
-    .section-table{
-        margin: 160px 0 0 0 ;
-        &__title{
-            font-size: $fs3;
-            text-align: center;
-            animation: fadeIn 6s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-            margin: 0 0 50px 0;
-        }
-        &__chap{
-            a{
-                display: inline-block;
-	            transition: all .3s ease 0s;
-                color: $col-sub2;
-                text-decoration: none;
-            }
-            a:hover {
-                // text-decoration: underline;
-                transform: scale(1.5);
-                cursor: pointer;
-            }
-            margin:30px 0 30px 0;
-            text-align: center;
-            font-size: $fs4;
-            animation: fadeIn 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-        }
-    }
-}
-
-.section{
-    &__title{
-        // display: inline-block;
-        margin: 0 0 0 100px;
-        width:250px;
-        text-align: center;
-        padding: 50px 20px 50px 20px;
-        border-right:8px solid $col-sub2-clear ;
-        border-bottom:8px solid $col-sub2-clear ;
-        font-size: $fs2;
-        color:$col-sub1;
-    }
-    &__text{
-        font-size: $fs3;
-        margin:20px 0 70px 52%;
-    }
-    &__bul{
-        margin: 30px 0 30px 0;
-        a{
-            color: $col-sub2;
-            border-bottom: 2px solid $col-sub2;
-        }
-    }
-    &__bulsub{
-        font-size:20px;
-        margin: 0 0 20px 0;
-        a{
-            color: $col-sub2;
-            border-bottom: 1px solid $col-sub2;
-        }
-    }
-    &__omake{
-        margin: 0 0 0 20%;
-        .title{
-            text-align: center;
-            font-size: $fs3;
-        }
-        img{
-            height: 200px;
-        }
-        padding: 0 0 0 90px;
-        .input{
-            display: inline-block;
-        }
-        .arrow{
-            display: inline-block;
-            .arrow-right {
-                display: inline-block;
-                width: 36px;
-                height: 36px;
-                margin: 30px 30px 70px 30px;
-                border-top: 4px solid $col-sub2;
-                border-right: 4px solid $col-sub2;
-                transform: rotate(45deg);
-            }
-        }
-        .output{
-            display: inline-block;
-        }
-    }
-}
-
-
-@media screen and (max-width:767px) {
+@media screen and (min-width:768px) {
     .section{
         &__title_top{
             .text{
-                font-size:100px;
+                font-size:$fs2;
+            }
+        }
+        .section-table{
+            margin: 160px 0 0 0 ;
+            &__title{
+                font-size: $fs3;
+                margin: 0 0 50px 0;
+            }
+            &__chap{
+                margin:30px 0 30px 0;
+                font-size: $fs4;
+            }
+        }
+    }
+
+    .section{
+        &__title{
+            margin: 0 0 0 100px;
+            width:250px;
+            padding: 50px 20px 50px 20px;
+            border-right:8px solid $col-sub2-clear ;
+            border-bottom:8px solid $col-sub2-clear ;
+            font-size: $fs4;
+        }
+        &__text{
+            font-size: $fs3;
+            margin:20px 0 70px 52%;
+        }
+        &__bul{
+            margin: 30px 0 30px 0;
+        }
+        &__bulsub{
+            font-size:20px;
+            margin: 0 0 20px 0;
+        }
+        &__omake{
+            margin: 0 0 0 20%;
+            .title{
+                font-size: $fs3;
+            }
+            img{
+                height: 200px;
+            }
+            padding: 0 0 0 90px;
+            .arrow{
+                display: inline-block;
+            }
+            .output{
+                display: inline-block;
+            }
+        }
+        .long-title{
+            text-align: left;padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    body::before{
+        left:5%;
+    }
+    .section{
+        &__title_top{
+            .text{
+                margin: 15% 0 0 0 ;
+                font-size:20px;
             }
         }
         .section-table{
@@ -145,7 +101,49 @@
             }
         }
     }
+    .pc{
+        display: none;
+    }
+    .section{
+        &__title{
+            // margin: 0 0 0 100px;
+            width:100%;
+            padding: 15% 0 15% 0;
+            text-align: center;
+            border-bottom:5px solid $col-sub2-clear ;
+            font-size: $fs4;
+        }
+        &__text{
+            width: 80%;
+            margin: 5% 10% 0 10%;
+            font-size: 17px;
 
+        }
+        &__bul{
+            margin: 30px 0 30px 0;
+        }
+        &__bulsub{
+            font-size:20px;
+            margin: 0 0 20px 0;
+        }
+        &__omake{
+            width: 100%;
+            .title{
+                text-align: center;
+                font-size: 15px;
+            }
+            img{
+                width: 50%;
+                margin: 0 25% 0 25%;
+            }
+            .arrow{
+                display: none;
+            }
+            .output{
+                display: inline-block;
+            }
+        }
+    }
 }
 
 

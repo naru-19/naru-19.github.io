@@ -1,127 +1,66 @@
-@charset "UTF-8";
-.section__title_top {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.section__title_top .text {
-  color: #dddddd;
-  width: 14ch;
-  font: thin 200% 　Consolas, Monaco, monospace;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid transparent;
-  font-size: 40px;
-  animation: typing 2s steps(14), caret 0.3s steps(1) infinite;
-}
-
-.section .section-table {
-  margin: 160px 0 0 0;
-}
-
-.section .section-table__title {
-  font-size: 27px;
-  text-align: center;
-  animation: fadeIn 6s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-  margin: 0 0 50px 0;
-}
-
-.section .section-table__chap {
-  margin: 30px 0 30px 0;
-  text-align: center;
-  font-size: 25px;
-  animation: fadeIn 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-}
-
-.section .section-table__chap a {
-  display: inline-block;
-  transition: all .3s ease 0s;
-  color: #dddddd;
-  text-decoration: none;
-}
-
-.section .section-table__chap a:hover {
-  transform: scale(1.5);
-  cursor: pointer;
-}
-
-.section__title {
-  margin: 0 0 0 100px;
-  width: 250px;
-  text-align: center;
-  padding: 50px 20px 50px 20px;
-  border-right: 8px solid rgba(238, 238, 238, 0.4);
-  border-bottom: 8px solid rgba(238, 238, 238, 0.4);
-  font-size: 40px;
-  color: #00ACC1;
-}
-
-.section__text {
-  font-size: 27px;
-  margin: 20px 0 70px 52%;
-}
-
-.section__bul {
-  margin: 30px 0 30px 0;
-}
-
-.section__bul a {
-  color: #dddddd;
-  border-bottom: 2px solid #dddddd;
-}
-
-.section__bulsub {
-  font-size: 20px;
-  margin: 0 0 20px 0;
-}
-
-.section__bulsub a {
-  color: #dddddd;
-  border-bottom: 1px solid #dddddd;
-}
-
-.section__omake {
-  margin: 0 0 0 20%;
-  padding: 0 0 0 90px;
-}
-
-.section__omake .title {
-  text-align: center;
-  font-size: 27px;
-}
-
-.section__omake img {
-  height: 200px;
-}
-
-.section__omake .input {
-  display: inline-block;
-}
-
-.section__omake .arrow {
-  display: inline-block;
-}
-
-.section__omake .arrow .arrow-right {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  margin: 30px 30px 70px 30px;
-  border-top: 4px solid #dddddd;
-  border-right: 4px solid #dddddd;
-  transform: rotate(45deg);
-}
-
-.section__omake .output {
-  display: inline-block;
+@media screen and (min-width: 768px) {
+  .section__title_top .text {
+    font-size: 40px;
+  }
+  .section .section-table {
+    margin: 160px 0 0 0;
+  }
+  .section .section-table__title {
+    font-size: 27px;
+    margin: 0 0 50px 0;
+  }
+  .section .section-table__chap {
+    margin: 30px 0 30px 0;
+    font-size: 25px;
+  }
+  .section__title {
+    margin: 0 0 0 100px;
+    width: 250px;
+    padding: 50px 20px 50px 20px;
+    border-right: 8px solid rgba(238, 238, 238, 0.4);
+    border-bottom: 8px solid rgba(238, 238, 238, 0.4);
+    font-size: 25px;
+  }
+  .section__text {
+    font-size: 27px;
+    margin: 20px 0 70px 52%;
+  }
+  .section__bul {
+    margin: 30px 0 30px 0;
+  }
+  .section__bulsub {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  .section__omake {
+    margin: 0 0 0 20%;
+    padding: 0 0 0 90px;
+  }
+  .section__omake .title {
+    font-size: 27px;
+  }
+  .section__omake img {
+    height: 200px;
+  }
+  .section__omake .arrow {
+    display: inline-block;
+  }
+  .section__omake .output {
+    display: inline-block;
+  }
+  .section .long-title {
+    text-align: left;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  body::before {
+    left: 5%;
+  }
   .section__title_top .text {
-    font-size: 100px;
+    margin: 15% 0 0 0;
+    font-size: 20px;
   }
   .section .section-table {
     margin: 160px 0 0 0;
@@ -147,6 +86,45 @@
   .section .section-table__chap a:hover {
     transform: scale(1.5);
     cursor: pointer;
+  }
+  .pc {
+    display: none;
+  }
+  .section__title {
+    width: 100%;
+    padding: 15% 0 15% 0;
+    text-align: center;
+    border-bottom: 5px solid rgba(238, 238, 238, 0.4);
+    font-size: 25px;
+  }
+  .section__text {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    font-size: 17px;
+  }
+  .section__bul {
+    margin: 30px 0 30px 0;
+  }
+  .section__bulsub {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  .section__omake {
+    width: 100%;
+  }
+  .section__omake .title {
+    text-align: center;
+    font-size: 15px;
+  }
+  .section__omake img {
+    width: 50%;
+    margin: 0 25% 0 25%;
+  }
+  .section__omake .arrow {
+    display: none;
+  }
+  .section__omake .output {
+    display: inline-block;
   }
 }
 

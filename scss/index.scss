@@ -1,9 +1,8 @@
 @import "valiables";
 
 
+
 .section{
-    // margin-top: 160px;
-    // height: 100vh;
     &__title_top{
         display: flex;
         width: 100%;
@@ -17,7 +16,7 @@
             overflow: hidden;
             white-space: nowrap;
             border-right: 2px solid transparent;
-            font-size: $fs2;
+            font-size:$fs2;
             animation: typing 2s steps(14), caret 0.3s steps(1) infinite ;
         }
     }
@@ -109,6 +108,44 @@
             display: inline-block;
         }
     }
+}
+
+
+@media screen and (max-width:767px) {
+    .section{
+        &__title_top{
+            .text{
+                font-size:100px;
+            }
+        }
+        .section-table{
+            margin: 160px 0 0 0 ;
+            &__title{
+                font-size: $fs3;
+                text-align: center;
+                animation: fadeIn 6s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+                margin: 0 0 50px 0;
+            }
+            &__chap{
+                a{
+                    display: inline-block;
+                    transition: all .3s ease 0s;
+                    color: $col-sub2;
+                    text-decoration: none;
+                }
+                a:hover {
+                    // text-decoration: underline;
+                    transform: scale(1.5);
+                    cursor: pointer;
+                }
+                margin:30px 0 30px 0;
+                text-align: center;
+                font-size: $fs4;
+                animation: fadeIn 10s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+            }
+        }
+    }
+
 }
 
 

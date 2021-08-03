@@ -11,6 +11,17 @@
 
 </head>
 <body>
+<script>
+    $(function () {
+        $('#pagepiling').pagepiling({
+            menu: '#nav',
+            sectionSelector: '.section',
+            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            scrollingSpeed: 1200,
+        });
+    });
+</script>
 <div id="pagepiling">
     <a class="totop" style="z-index: 100;" href="#page1"><span>topに戻る</span></a>
     <section class="section pp-scrollable" style="z-index: 10;" id="#page1">

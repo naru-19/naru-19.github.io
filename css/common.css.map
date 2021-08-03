@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECFV,qBAAkB;EDGxB,KAAK,ECAC,OAAO;EDCb,WAAW,ECOX,eAAe,EAAE,KAAK;CDNzB;;AAED,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,WAAW;CACvB;;AAcD,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,UAAU;EACnB,WAAW,EAAE,GAAG,CAAC,KAAK,CCtBV,wBAA2B;CDuB1C",
+    "sources": [
+        "../scss/common.scss",
+        "../scss/_valiables.scss"
+    ],
+    "names": [],
+    "file": "common.css"
+}

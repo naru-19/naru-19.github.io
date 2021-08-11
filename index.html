@@ -29,10 +29,10 @@
                 <a href="#page3">過去の製作物</a>
             </div>
             <div class="section-table__chap">
-                <a href="#page4">この先やりたいこと</a>
+                <a href="#page5">この先やりたいこと</a>
             </div>
             <div class="section-table__chap">
-                <a href="#page5">おまけ</a>
+                <a href="#page6">おまけ</a>
             </div>
         </div>
         <div class="sp">
@@ -68,7 +68,28 @@
         </div>
     </section>
     <section class="section pp-scrollable" style="z-index: 8;" id="#page3">
-    
+        <div class="section__title">
+            過去の製作物
+        </div>
+        <div class="section__text">
+            <div class="section__bul">
+                <a target="_blank" href="https://irochi.herokuapp.com/">Irochi</a>
+            </div>
+            <div class="section__bulsub">
+                入力画像の色を自由に変換することができます。<br>このサイトはflaskを使って作られています。<br>
+                このサイトは読み込みの速さと処理の速さが特徴です。<br>
+                <a target="_blank" href="https://irochi.herokuapp.com/">こちら</a>のリンクからアプリに移動できます。
+                <img src="./img/psi.png" alt=""style='width:80%;margin:10px 0 0 0 '>
+            </div>
+        </div>
+        <div class="sp up">
+            <a href="#page2">↑</a>
+        </div>
+        <div class="sp">
+            <a href="#page4">↓</a>
+        </div>
+    </section>
+    <section class="section pp-scrollable" style="z-index: 7;" id="#page4">
         <div class="section__title">
             過去の製作物
         </div>
@@ -81,39 +102,6 @@
                 <span class="pc">作成したものをpdfあるいは画像としても保存できるのも特徴です。<br></span>
                 <a target="_blank" href="https://hurocha.herokuapp.com/top">こちら</a>からHurochaに移動できます。
             </div>
-            <div class="section__bul">
-                <a target="_blank" href="https://irochi.herokuapp.com/">Irochi</a>
-            </div>
-            <div class="section__bulsub">
-                入力画像の色を自由に変換することができます。<br>このサイトはflaskを使って作られています。<br>
-                <a target="_blank" href="https://irochi.herokuapp.com/">こちら</a>のリンクからアプリに移動できます。
-            </div>
-        </div>
-        <div class="sp up">
-            <a href="#page2">↑</a>
-        </div>
-        <div class="sp">
-            <a href="#page4">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 7;" id="page4">
-    
-        <div class="section__title long-title" >
-            この先<br>やりたいこと
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                とにかくどんどん色んなものを作る
-            </div>
-            <div class="section__bul">
-                作ったものをアプリにする
-            </div>
-            <div class="section__bul">
-                signateでメダルを取る
-            </div>
-            <div class="section__bul">
-                国際会議での論文の採択を目指す
-            </div>
         </div>
         <div class="sp up">
             <a href="#page3">↑</a>
@@ -123,6 +111,29 @@
         </div>
     </section>
     <section class="section pp-scrollable" style="z-index: 6;" id="page5">
+    
+        <div class="section__title long-title" >
+            この先<br>やりたいこと
+        </div>
+        <div class="section__text">
+            <div class="section__bul">
+                画像処理を用いたアプリの作成
+            </div>
+            <div class="section__bul">
+                機械学習コンペでメダルをとる。
+            </div>
+            <div class="section__bul">
+                
+            </div>
+        </div>
+        <div class="sp up">
+            <a href="#page4">↑</a>
+        </div>
+        <div class="sp">
+            <a href="#page6">↓</a>
+        </div>
+    </section>
+    <section class="section pp-scrollable" style="z-index: 5;" id="page6">
         <div class="section__title" >
             おまけ
         </div>
@@ -152,7 +163,7 @@
             </div>
         </div>
         <div class="sp">
-            <a href="#page4">↑</a>
+            <a href="#page5">↑</a>
         </div>
     </section>
 </div>
@@ -165,8 +176,8 @@
         $('#pagepiling').pagepiling({
             menu: '#nav',
             sectionSelector: '.section',
-            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
             scrollingSpeed: 1800,
         });
     });

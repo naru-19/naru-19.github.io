@@ -116,7 +116,6 @@ body::before{
     font-size: $fs1;
     text-align: right;
     position: fixed;
-    width: 90%;
     bottom: 50px;
     span{
         border: double 8px $col-sub2-clear;
@@ -133,6 +132,7 @@ body::before{
     // text-shadow: 2px 2px 3px #000;
     cursor: pointer;
   }  
+  right: 30px;
 }
 
 a{

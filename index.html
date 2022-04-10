@@ -1,176 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/jquery.pagepiling.css">
+    <!-- <link rel="stylesheet" href="./css/jquery.pagepiling.css"> -->
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 
-<div id="pagepiling">
-    <a class="totop" style="z-index: 100;" href="#page1"><span>topに戻る</span></a>
-    <section class="section pp-scrollable" style="z-index: 10;" id="#page1">
-        <div class="section__title_top">
-            <div class="text">ここはなるが作ったページです</div>
-        </div>
-        <div class="section-table">
-            <div class="section-table__title">
-                目次
-            </div>
-            <div class="section-table__chap">
-                <a href="#page2">自己紹介</a>
-            </div>
-            <div class="section-table__chap">
-                <a href="#page3">過去の製作物</a>
-            </div>
-            <div class="section-table__chap">
-                <a href="#page5">この先やりたいこと</a>
-            </div>
-            <div class="section-table__chap">
-                <a href="#page6">おまけ</a>
-            </div>
-        </div>
-        <div class="sp">
-            <a href="#page2">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 9;" id="#page2">
-        <div class="section__title">
-            自己紹介
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                2000年広島生まれ
-            </div>
-            <div class="section__bul">
-                趣味はテニス・キーボードを弾くこと
-            </div>
-            <div class="section__bul">
-                
-            </div>
-            <div class="section__bul">
-                大学の専攻は情報システム系
-            </div>
-            <div class="section__bul">
-                <a target="_blank" href="https://github.com/naru-19">githubはここから</a>
-            </div>
-        </div>
-        <div class="sp up">
-            <a href="#page1">↑</a>
-        </div>
-        <div class="sp">
-            <a href="#page3">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 8;" id="#page3">
-        <div class="section__title">
-            過去の製作物
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                <a target="_blank" href="https://irochi.herokuapp.com/">Irochi</a>
-            </div>
-            <div class="section__bulsub">
-                入力画像の色を自由に変換することができます。<br>このサイトはflaskを使って作られています。<br>
-                このサイトは読み込みの速さと処理の速さが特徴です。<br>
-                <a target="_blank" href="https://irochi.herokuapp.com/">こちら</a>のリンクからアプリに移動できます。
-                <img src="./img/psi.png" alt=""style='width:80%;margin:10px 0 0 0 '>
-            </div>
-        </div>
-        <div class="sp up">
-            <a href="#page2">↑</a>
-        </div>
-        <div class="sp">
-            <a href="#page4">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 7;" id="#page4">
-        <div class="section__title">
-            過去の製作物
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                <a target="_blank" href="https://hurocha.herokuapp.com/top">Hurocha</a>
-            </div>
-            <div class="section__bulsub">
-                Hurochaでは直感的な操作によってフローチャートを作成できます。<br>このサイトはRuby on Railsを使って作られています。
-                <span class="pc">作成したものをpdfあるいは画像としても保存できるのも特徴です。<br></span>
-                <a target="_blank" href="https://hurocha.herokuapp.com/top">こちら</a>からHurochaに移動できます。
-            </div>
-        </div>
-        <div class="sp up">
-            <a href="#page3">↑</a>
-        </div>
-        <div class="sp">
-            <a href="#page5">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 6;" id="page5">
-    
-        <div class="section__title long-title" >
-            この先<br>やりたいこと
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                画像処理を用いたアプリの作成
-            </div>
-            <div class="section__bul">
-                機械学習コンペでメダルをとる。
-            </div>
-            <div class="section__bul">
-                
-            </div>
-        </div>
-        <div class="sp up">
-            <a href="#page4">↑</a>
-        </div>
-        <div class="sp">
-            <a href="#page6">↓</a>
-        </div>
-    </section>
-    <section class="section pp-scrollable" style="z-index: 5;" id="page6">
-        <div class="section__title" >
-            おまけ
-        </div>
-        <div class="section__text">
-            <div class="section__bul">
-                ここまで見てくれてありがとうございます。
-            </div>
-            <div class="section__bul">
-                作ったものを実際に使った結果載せときます。
-            </div>
-        </div>
-        <div class="section__omake">
-            <div class="input">
-                <div class="title">
-                入力画像
-                </div>
-                <img src="img/pika.jpg">
-            </div>
-            <div class="arrow">
-                <div class="arrow-right"></div>
-            </div>
-            <div class="output">
-                <div class="title">
-                    出力画像
-                </div>
-                <img src="img/pika_edit.jpg">
-            </div>
-        </div>
-        <div class="sp">
-            <a href="#page5">↑</a>
-        </div>
-    </section>
+<div class="section_title">
+    ABOUT
 </div>
+<div class="container-fluid section1">
+    <div class="row">
+        <div class="col-6 left">
+            <div class="title">
+            </div>
+            <div class="img">
+                <img src="./img/myprof.svg">
+            </div>
+        </div>
+        <div class="col-6 right">
+            <div class="title"> 略歴</div>
+            <div class="text">
+                2000年広島生まれ．<br>
+                2018年に大阪大学に入学．
+                現在は大阪大学大学院情報科学研究科の修士課程1年で，
+                コンピュータビジョンに関する研究を行っている．<br>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid section2">
+    <div class="row">
+        <div class="col-6 title">
+            過去の制作物
+        </div>
+        <div class="col-6 title">
+            SKILLS
+        </div>
+        <div class="col-6 left">
+            <div class="content">
+                <div class="sub_title"> Hurocha </div>
+                シンプルなUIでフローチャートを作成できるwebアプリ．
+                学部3年生の時，Ruby on Railsを用いて制作．<br>
+                <div class="sub_title"> Irochi</div>
+                写真やイラストを色違いにすることができるサイト．
+                pythonを使ってwebアプリを作ってみたかったためFlaskを用いて2週間ほどで制作．
+            </div>
+        </div>
+        <div class="col-6 right">
+            <div class="content">
+                c++<br>
+                ２年程度,Atcoder highest緑<br>
+                python<br> ２年程度,データ分析コンペ入賞経験有<br>
 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid section2">
+    <div class="row">
+        <div class="col-12 title">
+            NEWS
+        </div>
+        <div class="col-12 left">
+            <div class="content">
+                2021/5/15 Atcoder緑達成<br>
+                2022/2/18 データ分析コンペatmaCup #13にて4位
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section_title">
+    過去の制作物詳細
+</div>
+<div class="container-fluid section3">
+    <div class="row">
+        <div class="col-6 left">
+            <div class="title">
+                <img src="./img/huroch.svg">
+            </div>
+            <div class="desc">
+                <img src="./img/hurocha_img.svg" alt="">
+            </div>
+        </div>
+        <div class="col-6 right">
+            <div class="text">
+                <div class="sub_title">
+                    <a href="http://hurocha.herokuapp.com/show" target="_blank"> Hurocha<span>&#128279</span>とは</a>
+                </div>
+                    簡単操作でフローチャートを作成できるWebアプリ
+            </div>
+            <div class="text">
+                <div class="sub_title">作ったきっかけ</div>
+                子ども向けロボットプログラミング教室でアルバイトをしていた際に，
+                頭の中で思いついた事を整理するツールがあれば子どもたちももっと簡単にプログラミングできるのではないか，と思ったのがきっかけ．
+            </div>
+        </div>
+    </div>
+</div>
 <!-- <script type="text/javascript" src="./js/index.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script> -->
 <script>
     $(function () {
         $('#pagepiling').pagepiling({

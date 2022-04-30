@@ -1,115 +1,262 @@
 @import "valiables";
+@import "common";
 
-@media screen and (min-width:768px) {
-    body{
-        padding: 8% 5% 10% 5%;
-        font-family:"游ゴシック";
-        background-color:$c6;
-    }
-    .section_title{
-        width:94%;
-        padding:5% 0 1% 5%;
-        color: $c4;
-        font-size: $fs4;
-        color:white;
-    }
-    .section1{
-        width:94%;
-        padding: 5%;
-        background-color: white;
-        border-radius: 15px;
-        text-align: center;
-        .left{
-            background-color: $c5;
-            border-radius: 65px;
-            color:white;
-            img{
-                margin:15% 0 5% 0;
-                width:90%;
-            }
-        }
-        .right {
-            // margin: ;
-            padding-left: 5%;
-            color:$c4;
-            text-align: left;
-            height:50px;
-        }
+
+@media screen and (max-width:767px){
+    html {
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+        
+    .section1{
+        padding: 25% 4% 5% 2%;
+        .myprof{
+            font-size: $flarge-sp;
+            .name{
+                line-height: $flarge-sp;
+                .github-icon{
+                    height:$flarge-sp;
+                }
+            }
+            .text {
+                text-align: left;
+                font-size: $fmid-sp;
+                margin: 10px 0 0 4px;
+            
+                .link {
+                    border-bottom: white solid 1px;
+                    color: white;
+                    text-decoration: none;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+            
+                a:hover {
+                    color: $c1;
+                }
+            }
+        }
+        .table{
+            margin: 10px 0 0 4px;
+            font-size: $fmid2-sp;
+        }
+    }
     .section2{
-        width: 94%;
-        padding-top: 5%;
-        .title{
-            color: white;
-            padding-bottom:1%;
-            // text-align: center;
-            font-size: $fs4;
-        }
-        .left{
-            padding:0 5% 0 0;
-            .content{
-                .sub_title{
-                    color:$c4;
-                    font-size: $fs4;
-                }
-                padding: 2% 4% 2% 4%;
-                background-color: white;
-                border-radius: 15px;
-                color:$c4;
-            }
-        }
-        .right{
-            padding:0 5% 0 0;
-            .content {
-                padding: 2% 0 2% 2%;
-                background-color: white;
-                border-radius: 15px;
-                color: $c4;
-            }
-        }
-    }
-    .section3{
-        width:94%;
         .row{
-        // background-color: $c5;
-        background-color: white;
-        border-radius: 15px;
-        padding: 5%;
+            margin: 0 auto;
         }
-        .left{
-            padding:2% 0 2% 0;
-            background-color: $c5;
-            border-radius: 40px;
+        .pc{
+            display: none;
+        }
+        a {
+            color: $c1;
+            border-bottom: 2px $c1 solid
+        }
+        .container-fluid{
+            padding: 0;
+        }
+        .title {
             text-align: center;
-            .title{
-                margin: 0 0 4% 0 ;
+            border-bottom: 1px solid $c1;
+        }
+        .news {
+            .contents {
+                text-align: center;
+                padding: 10px 0 0 0;
+                line-height: $fmid;
             }
-            img{
-                width:60%
+            margin:20px 0 60px 0;
+        }
+        .top-sp{
+            margin:30px 0 0 0;
+            text-align: center;
+            .notion{
+                font-size: $fmini-sp;
             }
         }
-        .right{
-            padding:4% 5% 2% 5%;
-            a {
-                text-decoration: none;
-                color: $c4;
-                span{
-                    font-size: 20px;
-                }
+        .bottom-sp{
+            text-align: center;
+            .sub-title{
+                margin: 30px 0 30px 0;
+                font-size: $flarge-sp;
             }
-            font-size: $fs2;
-            color: $c4;
             .text{
-                padding: 5% 0 0 0;
-                font-size: 15px;
-                .sub_title{
-                    font-size: $fs4;
-                    border-left:5px $c1 solid;
-                    border-bottom:5px $c6 solid;
-                    margin:0 0 2% 0;
-                }
+                font-size: $fmid2-sp;
+                line-height: $fmid2-sp;
             }
+        }
+        .c-apps{
+            margin-bottom: 60px;
+        }
+        .publications{
+            .contents{
+                margin:20px 0 0 0;
+            }
+            margin-bottom: 60px;
+        }
+        .skills{
+            .contents {
+                text-align: center;
+                margin: 20px 0 0 0;
+            }
+            margin-bottom: 60px;
         }
     }
+    .footer{
+        padding: 30px 0 10px 0;
+        color: white;
+        text-align: center;
+        img{
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sp{
+        display: none;
+    }
+    .row {
+        margin: 0 auto;
+    }
+    .section1{
+        padding:70px 0 70px 0;
+        .myprof{
+            padding: 30px 0 30px 15px;
+            font-size: $flarge;
+            .name{
+                border-left: white 9px solid;
+                line-height: $flarge;
+                padding: 0 0 0 8px;
+                .github-icon{
+                    height: $flarge;
+                }
+            }
+            .text{
+                font-size: $fmid;
+                .link{
+                    border-bottom: white solid 2px;
+                    color: white;
+                    text-decoration: none;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+                a:hover{
+                    color: #888888;
+                }
+            }
+        }
+        .table{
+            font-size: $fmid2;
+            a{
+                color: white;
+                line-height: 40px;
+                text-decoration: none;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }   
+            a:hover {
+                color: #888888;
+            }
+            padding: 15px 0 0 20px;
+        }
+    }
+    .section2{
+        margin: 10px 0 0 0;
+        text-align: center;
+        a{
+            color: $c1;
+            border-bottom: 2px $c1 solid;
+            text-decoration: none;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }               
+        a:hover {
+            color: #888888;
+        }
+        .title-area{
+            padding: 0 50px 0 50px;
+        }
+        .title{
+            text-align: center;
+            border-bottom: 1px solid $c1;
+        }
+        .news{
+            .contents{
+                padding: 10px 0 0 0;
+                line-height: $fmid;
+
+            }
+            margin-bottom: 70px;
+        }
+        .c-apps{
+            .contents{
+                margin: 50px 0 0 0;
+            }
+            .notion{
+                font-size: $fmini;
+                margin: 5px 0 0 0;
+            }
+            .text-area{
+                font-size: $flarge2;
+                text-align: left;
+                padding: 50px 0 0 50px;
+                .text{
+                    margin: 30px 0 0 0;
+                    font-size: $fmid;
+                }
+            }
+            .img-area{
+                padding:30px 0 0 0;
+            }
+            margin-bottom: 70px;
+        }
+        .publications{
+            .contents{
+                text-align: left;
+                padding: 50px 0 0 70px;
+                margin: 0 0 70px 0;
+            }
+        }
+        .skills{
+            .contents{
+                text-align: center;
+                padding: 15px 0 0 0 ;
+                line-height: 30px;
+            }
+            margin-bottom: 70px;
+        }
+    }
+    .container-fluid{
+        width: 768px;
+        margin:auto auto ;
+    }
+
+    .footer{
+        margin: 30px 0 0 0;
+        padding: 80px 0 10px 0;
+        text-align: center;
+        img{
+            height: 80px;
+        }
+        .copy{
+            margin: 30px 0 0 0;
+            color: white;
+        }
+    }
+
+
 }

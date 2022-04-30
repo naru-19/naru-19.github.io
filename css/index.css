@@ -1,111 +1,260 @@
-@charset "UTF-8";
-@media screen and (min-width: 768px) {
-  body {
-    padding: 8% 5% 10% 5%;
-    font-family: "游ゴシック";
-    background-color: #444454;
+body {
+  background-color: #F5F5F5;
+  color: #43404F;
+}
+
+a {
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #888888;
+}
+
+.section1 {
+  background-color: #43404F;
+  color: white;
+}
+
+.footer {
+  background-color: #43404F;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
-  .section_title {
-    width: 94%;
-    padding: 5% 0 1% 5%;
-    color: #43404F;
-    font-size: 25px;
-    color: white;
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .section1 {
-    width: 94%;
-    padding: 5%;
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
+    padding: 25% 4% 5% 2%;
   }
-  .section1 .left {
-    background-color: #A3DDCB;
-    border-radius: 65px;
-    color: white;
+  .section1 .myprof {
+    font-size: 25px;
   }
-  .section1 .left img {
-    margin: 15% 0 5% 0;
-    width: 90%;
+  .section1 .myprof .name {
+    line-height: 25px;
   }
-  .section1 .right {
-    padding-left: 5%;
-    color: #43404F;
+  .section1 .myprof .name .github-icon {
+    height: 25px;
+  }
+  .section1 .myprof .text {
     text-align: left;
-    height: 50px;
+    font-size: 13px;
+    margin: 10px 0 0 4px;
   }
-  .section2 {
-    width: 94%;
-    padding-top: 5%;
-  }
-  .section2 .title {
+  .section1 .myprof .text .link {
+    border-bottom: white solid 1px;
     color: white;
-    padding-bottom: 1%;
-    font-size: 25px;
-  }
-  .section2 .left {
-    padding: 0 5% 0 0;
-  }
-  .section2 .left .content {
-    padding: 2% 4% 2% 4%;
-    background-color: white;
-    border-radius: 15px;
-    color: #43404F;
-  }
-  .section2 .left .content .sub_title {
-    color: #43404F;
-    font-size: 25px;
-  }
-  .section2 .right {
-    padding: 0 5% 0 0;
-  }
-  .section2 .right .content {
-    padding: 2% 0 2% 2%;
-    background-color: white;
-    border-radius: 15px;
-    color: #43404F;
-  }
-  .section3 {
-    width: 94%;
-  }
-  .section3 .row {
-    background-color: white;
-    border-radius: 15px;
-    padding: 5%;
-  }
-  .section3 .left {
-    padding: 2% 0 2% 0;
-    background-color: #A3DDCB;
-    border-radius: 40px;
-    text-align: center;
-  }
-  .section3 .left .title {
-    margin: 0 0 4% 0;
-  }
-  .section3 .left img {
-    width: 60%;
-  }
-  .section3 .right {
-    padding: 4% 5% 2% 5%;
-    font-size: 40px;
-    color: #43404F;
-  }
-  .section3 .right a {
     text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  .section1 .myprof .text a:hover {
     color: #43404F;
   }
-  .section3 .right a span {
+  .section1 .table {
+    margin: 10px 0 0 4px;
     font-size: 20px;
   }
-  .section3 .right .text {
-    padding: 5% 0 0 0;
-    font-size: 15px;
+  .section2 .row {
+    margin: 0 auto;
   }
-  .section3 .right .text .sub_title {
+  .section2 .pc {
+    display: none;
+  }
+  .section2 a {
+    color: #43404F;
+    border-bottom: 2px #43404F solid;
+  }
+  .section2 .container-fluid {
+    padding: 0;
+  }
+  .section2 .title {
+    text-align: center;
+    border-bottom: 1px solid #43404F;
+  }
+  .section2 .news {
+    margin: 20px 0 60px 0;
+  }
+  .section2 .news .contents {
+    text-align: center;
+    padding: 10px 0 0 0;
+    line-height: 24px;
+  }
+  .section2 .top-sp {
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .section2 .top-sp .notion {
+    font-size: 10px;
+  }
+  .section2 .bottom-sp {
+    text-align: center;
+  }
+  .section2 .bottom-sp .sub-title {
+    margin: 30px 0 30px 0;
     font-size: 25px;
-    border-left: 5px #DEEDF0 solid;
-    border-bottom: 5px #444454 solid;
-    margin: 0 0 2% 0;
+  }
+  .section2 .bottom-sp .text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .section2 .c-apps {
+    margin-bottom: 60px;
+  }
+  .section2 .publications {
+    margin-bottom: 60px;
+  }
+  .section2 .publications .contents {
+    margin: 20px 0 0 0;
+  }
+  .section2 .skills {
+    margin-bottom: 60px;
+  }
+  .section2 .skills .contents {
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+  .footer {
+    padding: 30px 0 10px 0;
+    color: white;
+    text-align: center;
+  }
+  .footer img {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  .section1 {
+    padding: 70px 0 70px 0;
+  }
+  .section1 .myprof {
+    padding: 30px 0 30px 15px;
+    font-size: 48px;
+  }
+  .section1 .myprof .name {
+    border-left: white 9px solid;
+    line-height: 48px;
+    padding: 0 0 0 8px;
+  }
+  .section1 .myprof .name .github-icon {
+    height: 48px;
+  }
+  .section1 .myprof .text {
+    font-size: 24px;
+  }
+  .section1 .myprof .text .link {
+    border-bottom: white solid 2px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  .section1 .myprof .text a:hover {
+    color: #888888;
+  }
+  .section1 .table {
+    font-size: 20px;
+    padding: 15px 0 0 20px;
+  }
+  .section1 .table a {
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  .section1 .table a:hover {
+    color: #888888;
+  }
+  .section2 {
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  .section2 a {
+    color: #43404F;
+    border-bottom: 2px #43404F solid;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  .section2 a:hover {
+    color: #888888;
+  }
+  .section2 .title-area {
+    padding: 0 50px 0 50px;
+  }
+  .section2 .title {
+    text-align: center;
+    border-bottom: 1px solid #43404F;
+  }
+  .section2 .news {
+    margin-bottom: 70px;
+  }
+  .section2 .news .contents {
+    padding: 10px 0 0 0;
+    line-height: 24px;
+  }
+  .section2 .c-apps {
+    margin-bottom: 70px;
+  }
+  .section2 .c-apps .contents {
+    margin: 50px 0 0 0;
+  }
+  .section2 .c-apps .notion {
+    font-size: 10px;
+    margin: 5px 0 0 0;
+  }
+  .section2 .c-apps .text-area {
+    font-size: 30px;
+    text-align: left;
+    padding: 50px 0 0 50px;
+  }
+  .section2 .c-apps .text-area .text {
+    margin: 30px 0 0 0;
+    font-size: 24px;
+  }
+  .section2 .c-apps .img-area {
+    padding: 30px 0 0 0;
+  }
+  .section2 .publications .contents {
+    text-align: left;
+    padding: 50px 0 0 70px;
+    margin: 0 0 70px 0;
+  }
+  .section2 .skills {
+    margin-bottom: 70px;
+  }
+  .section2 .skills .contents {
+    text-align: center;
+    padding: 15px 0 0 0;
+    line-height: 30px;
+  }
+  .container-fluid {
+    width: 768px;
+    margin: auto auto;
+  }
+  .footer {
+    margin: 30px 0 0 0;
+    padding: 80px 0 10px 0;
+    text-align: center;
+  }
+  .footer img {
+    height: 80px;
+  }
+  .footer .copy {
+    margin: 30px 0 0 0;
+    color: white;
   }
 }
 /*# sourceMappingURL=index.css.map */

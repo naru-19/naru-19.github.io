@@ -15,119 +15,172 @@
 </head>
 <body>
 
-<div class="section_title">
-    ABOUT
-</div>
-<div class="container-fluid section1">
-    <div class="row">
-        <div class="col-6 left">
-            <div class="title">
-            </div>
-            <div class="img">
-                <img src="./img/myprof.svg">
-            </div>
-        </div>
-        <div class="col-6 right">
-            <div class="title"> 略歴</div>
-            <div class="text">
-                2000年広島生まれ．<br>
-                2018年に大阪大学に入学．
-                現在は大阪大学大学院情報科学研究科の修士課程1年で，
-                コンピュータビジョンに関する研究を行っている．<br>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid section2">
-    <div class="row">
-        <div class="col-6 title">
-            過去の制作物
-        </div>
-        <div class="col-6 title">
-            SKILLS
-        </div>
-        <div class="col-6 left">
-            <div class="content">
-                <div class="sub_title"> Hurocha </div>
-                シンプルなUIでフローチャートを作成できるwebアプリ．
-                学部3年生の時，Ruby on Railsを用いて制作．<br>
-                <div class="sub_title"> Irochi</div>
-                写真やイラストを色違いにすることができるサイト．
-                pythonを使ってwebアプリを作ってみたかったためFlaskを用いて2週間ほどで制作．
-            </div>
-        </div>
-        <div class="col-6 right">
-            <div class="content">
-                c++<br>
-                ２年程度,Atcoder highest緑<br>
-                python<br> ２年程度,データ分析コンペ入賞経験有<br>
-
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid section2">
-    <div class="row">
-        <div class="col-12 title">
-            NEWS
-        </div>
-        <div class="col-12 left">
-            <div class="content">
-                2021/5/15 Atcoder緑達成<br>
-                2022/2/18 データ分析コンペatmaCup #13にて4位
-
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section_title">
-    過去の制作物詳細
-</div>
-<div class="container-fluid section3">
-    <div class="row">
-        <div class="col-6 left">
-            <div class="title">
-                <img src="./img/huroch.svg">
-            </div>
-            <div class="desc">
-                <img src="./img/hurocha_img.svg" alt="">
-            </div>
-        </div>
-        <div class="col-6 right">
-            <div class="text">
-                <div class="sub_title">
-                    <a href="http://hurocha.herokuapp.com/show" target="_blank"> Hurocha<span>&#128279</span>とは</a>
+<div class="section1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-8 myprof">
+                <div class="name">
+                    Takuto Narumoto <a href="https://github.com/naru-19" target="_blank"><img src="./img/github.svg" class="github-icon"></a>
                 </div>
-                    簡単操作でフローチャートを作成できるWebアプリ
+                <div class="text">
+                    Master student at <a href="https://www.ist.osaka-u.ac.jp/english/" target="_blank" class="link">Osaka University</a><br>
+                    Email: narumoto.takuto at ist.osaka-u.ac.jp
+                </div>
             </div>
-            <div class="text">
-                <div class="sub_title">作ったきっかけ</div>
-                子ども向けロボットプログラミング教室でアルバイトをしていた際に，
-                頭の中で思いついた事を整理するツールがあれば子どもたちももっと簡単にプログラミングできるのではないか，と思ったのがきっかけ．
+            <div class="col-12 col-md-4 table">
+                <a href="#news" class="">News</a><br>
+                <a href="#c-app" class="">Created Applications</a><br>
+                <a href="#pub" class="">Publications</a><br>
+                <a href="#skills" class="">Skills</a><br>
             </div>
         </div>
     </div>
 </div>
+
+<div class="section2">
+    <div class="container-fluid news " id="news">
+        <div class="row">
+            <div class="col-12 row title-area">
+                <div class="col-2 col-md-3"></div>
+                <div class="col-8 col-md-6 title">News</div>
+                <div class="col-2 col-md-3"></div>
+            </div>
+            <div class="col-12 contents">
+                2/18/2022 Fourth place in <a href="https://www.guruguru.science/competitions/19/leaderboard"target="_blank" class="">atmaCup #13</a> 🎉
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid c-apps" id="c-app">
+        <div class="row">
+            <div class="col-12 row title-area" id="#c-app">
+                <div class="col-2 col-md-3"></div>
+                <div class="col-8 col-md-6 title">Created Applications</div>
+                <div class="col-2 col-md-3"></div>
+            </div>
+            <!-- Hurocha -->
+            <div class="col-12 row contents">
+                <div class="col-6 pc text-area">
+                    <div class="sub-title">
+                        <a href="http://hurocha.herokuapp.com/show" target="_blank" class=""> Hurocha</a>
+                    </div>
+                    <div class="text">
+                        Web application <br>to create simple flowchart.<br>
+                        Source code is <a href="https://github.com/naru-19/hurocha" class="">here</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 img-area top-sp">
+                    <img src="img/hurocha.svg" alt="" class="">
+                    <div class="notion">
+                        ※ Image is for illustraion purposes
+                    </div>
+                </div>
+                <div class="col-12 sp bottom-sp">
+                    <div class="sub-title">
+                        <a href="http://hurocha.herokuapp.com/show" target="_blank" class=""> Hurocha</a>
+                    </div>
+                    <div class="text">
+                        Web application <br>to create simple flowchart.<br>
+                        Source code is <a href="https://github.com/naru-19/hurocha" class="">here</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Irochi -->
+            <div class="col-12 row contents">
+                <div class="col-12 col-md-6 img-area top-sp">
+                    <img src="img/irochi.svg" alt="" class="">
+                </div>
+                <div class="col-12 col-md-6 text-area bottom-sp">
+                    <div class="sub-title">
+                        <a href="https://irochi.herokuapp.com/" target="_blank" class=""> Irochi</a>
+                    </div>
+                    <div class="text">
+                        Web application <br>to create simple flowchart.<br>
+                        Source code is <a href="https://github.com/naru-19/Irochi" class="">here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid publications" id="pub">
+        <div class="row">
+            <div class="col-12 row title-area">
+                <div class="col-2 col-md-3"></div>
+                <div class="col-8 col-md-6 title">Publications</div>
+                <div class="col-2 col-md-3"></div>
+            </div>
+            <div class="col-2 sp"></div>
+            <div class="col-8 col-md-12 contents">
+                <b>鳴本拓人</b>，山藤浩明，大倉史生，松下康之<br>
+                ラベル付けされていないRGB-D 画像を用いた点群セマンティックセグメンテーションの高精度化<br>
+                MIRU 2022 (予定)
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid skills" id="skills">
+        <div class="row">
+            <div class="col-12 row title-area">
+                <div class="col-2 col-md-3"></div>
+                <div class="col-8 col-md-6 title">Skills</div>
+                <div class="col-2 col-md-3"></div>
+            </div>
+            <div class="col-2 sp"></div>
+            <div class="col-8 col-md-12 contents">
+                C++ (4+years!)<br>
+                Python (3+years!)<br>
+                TensorFlow <br>
+                PyTorch <br>
+                Docker <br>
+                Flask <br>
+                Ruby on Rails <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <a href="https://github.com/naru-19" target="_blank">
+                    <img src="img/github.svg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="mailto:narumoto.takuto@ist.osaka-u.ac.jp">
+                    <img src="img/mail.svg" alt="">
+                </a>
+            </div>
+            <div class="col-12 copy">
+                ©︎ Takuto Narumoto
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- <script type="text/javascript" src="./js/index.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<!-- スムーズスクロール部分の記述 -->
 <script>
     $(function () {
-        $('#pagepiling').pagepiling({
-            menu: '#nav',
-            sectionSelector: '.section',
-            sectionsColor: ['rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)', 'rgb(97,100,104)'],
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-            scrollingSpeed: 1800,
+        $('a[href^=#]').click(function () {
+            var speed = 600; 
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({ scrollTop: position }, speed, 'swing');
+            return false;
         });
     });
-
 </script>
 </body>
 

@@ -2,4 +2,27 @@
 
 body{
     background-color: $cmain;
+    color: $c1;
+}
+a {
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: #888888;
+}
+
+.section1{
+    background-color: $c1;
+    color: white;
+}
+
+.footer{
+    background-color: $c1;
 }

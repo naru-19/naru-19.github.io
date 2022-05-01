@@ -108,11 +108,13 @@ a:hover {
   .section2 .c-apps {
     margin-bottom: 60px;
   }
-  .section2 .publications {
-    margin-bottom: 60px;
-  }
   .section2 .publications .contents {
     margin: 20px 0 0 0;
+  }
+  .section2 .publications img {
+    text-align: center;
+    margin: 10px 0 60px 5%;
+    width: 90%;
   }
   .section2 .skills {
     margin-bottom: 60px;

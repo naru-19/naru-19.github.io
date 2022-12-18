@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECFb,OAAO;EDGV,KAAK,ECFL,OAAO;CDGV;;AACD,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;EACjB,eAAe,EAAE,IAAI;EACrB,kBAAkB,EAAE,aAAa;EACjC,eAAe,EAAE,aAAa;EAC9B,aAAa,EAAE,aAAa;EAC5B,UAAU,EAAE,aAAa;CAC5B;;AAED,AAAA,CAAC,AAAA,MAAM,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,SAAS,CAAA;EACL,gBAAgB,ECnBhB,OAAO;EDoBP,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,OAAO,CAAA;EACH,gBAAgB,ECxBhB,OAAO;CDyBV",
-    "sources": [
-        "../scss/common.scss",
-        "../scss/_valiables.scss"
-    ],
-    "names": [],
-    "file": "common.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/common.scss","../scss/_valiables.scss"],"names":[],"mappings":"AAEA;EACI,kBCFG;EDGH,OCFA;;;ADIJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI,kBCnBA;EDoBA;;;AAGJ;EACI,kBCxBA","file":"common.css"}

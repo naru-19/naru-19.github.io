@@ -7,6 +7,9 @@ a {
   color: white;
   line-height: 40px;
   text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -53,6 +56,9 @@ a:hover {
     border-bottom: white solid 1px;
     color: white;
     text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .section1 .myprof .text a:hover {
@@ -132,7 +138,6 @@ a:hover {
     height: 30px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .sp {
     display: none;
@@ -162,6 +167,9 @@ a:hover {
     border-bottom: white solid 2px;
     color: white;
     text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .section1 .myprof .text a:hover {
@@ -175,6 +183,9 @@ a:hover {
     color: white;
     line-height: 40px;
     text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .section1 .table a:hover {
@@ -188,6 +199,9 @@ a:hover {
     color: #43404F;
     border-bottom: 2px #43404F solid;
     text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .section2 a:hover {
@@ -262,5 +276,4 @@ a:hover {
     margin: 30px 0 0 0;
     color: white;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
